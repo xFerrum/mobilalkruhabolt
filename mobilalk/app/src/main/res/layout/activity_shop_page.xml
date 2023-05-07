@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopPageActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopPageActivity">
+
+    <Button
+        android:id="@+id/sapkabut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:onClick="toCart"
+        android:text="Kosárba"
+        app:layout_constraintStart_toEndOf="@+id/cap"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/gyemantszet"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gyemant_szett" />
+
+    <ImageView
+        android:id="@+id/surrano"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/gyemantszet"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gyemantszet"
+        app:srcCompat="@drawable/surrano" />
+
+    <ImageView
+        android:id="@+id/cap"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/gyemantszet"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surrano"
+        app:srcCompat="@drawable/cap" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/gyemantszet"
+        android:text="Fortinájt surranó"
+        app:layout_constraintStart_toEndOf="@+id/surrano"
+        app:layout_constraintTop_toTopOf="@+id/surrano" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/gyemantszet"
+        android:text="&quot;Zaza&quot; típusú fejfedő"
+        app:layout_constraintStart_toEndOf="@+id/cap"
+        app:layout_constraintTop_toTopOf="@+id/cap" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/surrano"
+        android:text="Gyémánt szett"
+        app:layout_constraintStart_toEndOf="@+id/gyemantszet"
+        app:layout_constraintTop_toTopOf="@+id/gyemantszet" />
+
+    <Button
+        android:id="@+id/kabatbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:onClick="toCart"
+        android:text="Kosárba"
+        app:layout_constraintStart_toEndOf="@+id/gyemantszet"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/cipobut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:onClick="toCart"
+        android:text="Kosárba"
+        app:layout_constraintStart_toEndOf="@+id/surrano"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
